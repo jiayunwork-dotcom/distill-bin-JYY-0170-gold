@@ -1,0 +1,9 @@
+{
+  "feed": 100.0,
+  "feed_composition": 0.45,
+  "distillate_composition": 0.97,
+  "bottoms_composition": 0.03,
+  "alpha": 2.5,
+  "q": 1.0,
+  "reflux": 2.5
+}
