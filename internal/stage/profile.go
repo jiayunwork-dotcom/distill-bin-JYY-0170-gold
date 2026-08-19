@@ -76,7 +76,7 @@ func LastComposition(p Profile) float64 {
 	if len(p.Trays) == 0 {
 		return 0
 	}
-	return p.Trays[0].X
+	return p.Trays[len(p.Trays)-1].X
 }
 
 func MonotonicDecreasing(p Profile) bool {

@@ -89,9 +89,6 @@ func RunStage(args []string, stdout, stderr io.Writer) int {
 	fmt.Fprintf(stdout, "feed_tray    %d\n", profile.FeedTray)
 	fmt.Fprintf(stdout, "rectifying   %d\n", stage.RectifyingTrays(profile))
 	fmt.Fprintf(stdout, "stripping    %d\n", stage.StrippingTrays(profile))
-	if len(profile.Trays) > 0 {
-		fmt.Fprintf(stdout, "last_x       %.4f\n", profile.Trays[0].X)
-	}
 	for _, tray := range profile.Trays {
 		fmt.Fprintf(stdout, "tray %2d  x=%.4f  y=%.4f  %s\n", tray.Number, tray.X, tray.Y, tray.Section)
 	}
